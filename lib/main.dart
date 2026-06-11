@@ -23,7 +23,7 @@ class JLWProcurementApp extends StatelessWidget {
         useMaterial3: true,
         primaryColor: SystemColors.corporateGreen,
         scaffoldBackgroundColor: SystemColors.pageBackground,
-        textTheme: GoogleFonts.sansSerifTextTheme(
+        textTheme: GoogleFonts.interTextTheme(
           Theme.of(context).textTheme,
         ),
         colorScheme: ColorScheme.fromSeed(
@@ -52,7 +52,7 @@ class _AppNavigationHarnessState extends State<AppNavigationHarness> {
   // In-memory persistent states
   late List<ProcurementOrder> _orders;
   final String _approverId = "HLW-99284-EXEC";
-  
+
   // Custom backstack simulation
   final List<ScreenRoute> _backstack = [ScreenRoute.login];
   String? _selectedOrderNo;
@@ -133,7 +133,7 @@ class _AppNavigationHarnessState extends State<AppNavigationHarness> {
             _navigateTo(ScreenRoute.orderList);
           },
         );
-        
+
       case ScreenRoute.orderList:
         return OrderListScreen(
           key: const ValueKey("order_list_view"),
@@ -148,7 +148,7 @@ class _AppNavigationHarnessState extends State<AppNavigationHarness> {
           onLogout: _handleLogout,
           onRestoreData: _restoreOriginalData,
         );
-        
+
       case ScreenRoute.orderDetail:
         final selectedOrder = _orders.firstWhere(
           (o) => o.orderNo == _selectedOrderNo,
