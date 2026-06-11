@@ -1,0 +1,19 @@
+// Placeholder build.gradle representing the Flutter Android module configurations
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace "com.jlw.procurement.portal"
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.jlw.procurement.portal"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0.0"
+    }
+}

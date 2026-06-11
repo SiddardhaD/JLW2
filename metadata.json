@@ -1,0 +1,6 @@
+{
+  "name": "Order Approval",
+  "description": "Corporate order approval portal for enterprise procurement management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
